@@ -8,6 +8,27 @@
 }
 
 body {
-  @apply bg-cream text-charcoal font-syne;
+  @apply bg-stone-50 text-charcoal font-syne;
   font-family: 'Syne', sans-serif;
+}
+
+.gradient-red {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 50%, #c44569 100%);
+}
+
+.gradient-glow {
+  background: radial-gradient(
+    circle,
+    rgba(255, 107, 107, 0.3) 0%,
+    rgba(238, 90, 111, 0.2) 50%,
+    transparent 70%
+  );
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
 }
