@@ -1,0 +1,13 @@
+@media screen and (max-width: 480px) {
+  .hero_h1 {
+    font-size: 22px;
+  }
+
+  .hero_para {
+    font-size: 14px;
+  }
+
+  .section_margin {
+    margin: 10px;
+  }
+}
