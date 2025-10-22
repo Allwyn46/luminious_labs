@@ -7,11 +7,10 @@
     </a>
 
     <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
-      <a href="#home" class="hover:text-charcoal transition">Home</a>
-      <a href="#product" class="hover:text-charcoal transition">Product</a>
-      <a href="#benefits" class="hover:text-charcoal transition">Benefits</a>
-      <a href="#faq" class="hover:text-charcoal transition">FAQ</a>
-      <a href="#blog" class="hover:text-charcoal transition">Blog</a>
+      <a (click)="scrollToSection('hero')" class="hover:text-charcoal cursor-pointer transition">Home</a>
+      <a href="#product" (click)="scrollToSection('product')"  class="hover:text-charcoal cursor-pointer transition">Product</a>
+      <a (click)="scrollToSection('benefits')"  class="hover:text-charcoal cursor-pointer transition">Benefits</a>
+      <a (click)="scrollToSection('faq')" class="hover:text-charcoal cursor-pointer transition">FAQ</a>
     </nav>
 
     <div class="hidden md:block">

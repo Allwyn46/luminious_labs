@@ -10,6 +10,8 @@
 body {
   @apply bg-stone-50 text-charcoal font-syne;
   font-family: 'Syne', sans-serif;
+  scroll-behavior: auto !important;
+  overflow-y: auto;
 }
 
 .gradient-red {
@@ -31,4 +33,11 @@ body {
 
 .hover-scale:hover {
   transform: scale(1.05);
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
 }

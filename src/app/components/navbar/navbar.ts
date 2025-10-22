@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { LenisService } from '../../lenis-service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +10,7 @@ import { Component } from '@angular/core';
 })
 export class Navbar {
   menuOpen = false;
+  constructor(private lenisService: LenisService) {}
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
@@ -16,5 +18,10 @@ export class Navbar {
 
   closeMenu() {
     this.menuOpen = false;
+  }
+
+  scrollToSection(sectionId: string) {
+    console.log('Scrolling to:', sectionId);
+    this.lenisService.scrollTo(sectionId);
   }
 }
