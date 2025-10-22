@@ -1,7 +1,9 @@
+
 [build]
 publish = "dist/luminious-labs"
 
 [[redirects]]
-form = "/*"
+from = "/*"
 to = "/index.html"
 status = 200
+
